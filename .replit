@@ -7,3 +7,15 @@ channel = "stable-24_05"
 [deployment]
 run = ["bash", "main.sh"]
 deploymentTarget = "cloudrun"
+
+[workflows]
+runButton = "Run Validation API"
+
+[[workflows.workflow]]
+name = "Run Validation API"
+author = 43591463
+mode = "sequential"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "python -m src.main"
