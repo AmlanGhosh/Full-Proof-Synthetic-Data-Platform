@@ -5,11 +5,11 @@ Validation orchestrator that routes data through validation pipelines.
 
 import pandas as pd
 from typing import Dict, Any, List
-from .validator_modules.fidelity import FidelityValidator
-from .validator_modules.task_utility import TaskUtilityValidator
-from .validator_modules.bias_check import BiasValidator
-from .validator_modules.privacy_risk import PrivacyRiskValidator
-from .validator_modules.causal_consistency import CausalConsistencyValidator
+from src.validator_modules.fidelity import FidelityValidator
+from src.validator_modules.task_utility import TaskUtilityValidator
+from src.validator_modules.bias_check import BiasValidator
+from src.validator_modules.privacy_risk import PrivacyRiskValidator
+from src.validator_modules.causal_consistency import CausalConsistencyValidator
 
 class ValidationOrchestrator:
     def __init__(self):

@@ -12,7 +12,7 @@ from fastapi import UploadFile
 # Add src to path for imports
 sys.path.append(os.path.join(os.path.dirname(__file__), '..', 'src'))
 
-from main import app
+from src.main import app
 
 client = TestClient(app)
 

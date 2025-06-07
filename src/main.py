@@ -8,9 +8,9 @@ from fastapi.responses import JSONResponse
 import pandas as pd
 import io
 from typing import Dict, Any
-from .loader import DataLoader
-from .orchestrator import ValidationOrchestrator
-from .aggregator import ScoreAggregator
+from src.loader import DataLoader
+from src.orchestrator import ValidationOrchestrator
+from src.aggregator import ScoreAggregator
 
 app = FastAPI(title="Full-Proof Synthetic Data Validation Platform", version="1.0.0")
 

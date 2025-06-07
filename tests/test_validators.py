@@ -8,13 +8,13 @@ import os
 # Add src to path for imports
 sys.path.append(os.path.join(os.path.dirname(__file__), '..', 'src'))
 
-from validator_modules.fidelity import FidelityValidator
-from validator_modules.privacy_risk import PrivacyRiskValidator
-from validator_modules.bias_check import BiasValidator
-from validator_modules.task_utility import TaskUtilityValidator
-from validator_modules.causal_consistency import CausalConsistencyValidator
-from orchestrator import ValidationOrchestrator
-from aggregator import ScoreAggregator
+from src.validator_modules.fidelity import FidelityValidator
+from src.validator_modules.privacy_risk import PrivacyRiskValidator
+from src.validator_modules.bias_check import BiasValidator
+from src.validator_modules.task_utility import TaskUtilityValidator
+from src.validator_modules.causal_consistency import CausalConsistencyValidator
+from src.orchestrator import ValidationOrchestrator
+from src.aggregator import ScoreAggregator
 
 class TestFidelityValidator:
     def setup_method(self):
